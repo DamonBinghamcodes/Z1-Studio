@@ -9,3 +9,22 @@ body {
     font-family: 'Roboto', sans-serif;
     background: #2c2c2c;
 }
+
+.navbar-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    border: 1px solid #333;
+    color: white;
+    padding: 10px 20px;
+    width: 100%;
+    min-height: 4.5rem;
+    text-decoration: none;
+}
+
+.navbar-logo .logo {
+    position: absolute;
+    size: 0.1rem;
+}
