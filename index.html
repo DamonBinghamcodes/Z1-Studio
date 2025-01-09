@@ -4,25 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Z1 Studio | Web Design Agency</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="navbar">
         <div class="navbar-container">
-            <div class="navbar-logo">
-                <a class="home" href="/index.html">
-                    <!-- <img class="logo" src="Public/Z1 Web Design Agency Logo - Phantom.png" alt="z1 logo">-->
-                </a>
-            </div>
-            <div class="navbar-menu">
-                <ul>
-                    <li><a href="what we do.html">WHAT WE DO</a></li>
-                    <li><a href="projects.html">PROJECTS</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <button><a href="contact.html">ENQUIRE NOW</a></button>
-                </ul>
-            </div>
+            <a class="home" href="index.html">
+                <img class="logo" src="Public/Z1 Web Design Agency Logo - phantom.png" alt="Z1 logo">
+            </a>
+            <button class="hamburger-menu" aria-label="Toggle Menu">
+                ☰
+            </button>
+        </div>
+        <div class="navbar-menu hidden">
+            <ul>
+                <li><a href="what_we_do.html">WHAT WE DO</a></li>
+                <li><a href="projects.html">PROJECTS</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <button><a href="contact.html">ENQUIRE NOW</a></button>
+            </ul>
         </div>
     </div>
+    <script src="index.js"></script>
 </body>
+
 </html>
