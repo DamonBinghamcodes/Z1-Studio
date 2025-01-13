@@ -107,6 +107,41 @@ body {
 
 /* Media Queries */
 
+/* Mopbile */
+@media (min-width: 479px)
+{
+    .logo {
+        height: 60px;
+    }
+
+    .navbar-menu {
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+        position: absolute;
+        top: 9%;
+        left: 0%;
+        width: 100%;
+    }
+
+    .navbar-menu ul {
+        flex-direction: column;
+    }
+
+    .navbar-menu li {
+        margin: 10px 0;
+    }
+
+    .navbar-menu a {
+        font-size: 1.1rem;
+    }
+
+    .navbar-menu button {
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+}
+
 /* Tablet and Larger: Show menu as a horizontal list */
 @media (min-width: 768px) {
     
