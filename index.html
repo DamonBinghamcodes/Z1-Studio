@@ -3,25 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Z1 Studio | Landing Page</title>
+    <title>Z1 Studio | Web Design Agency</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="landing-page">
-        <img class="landing-logo" src="Public/Z1 Web Design Agency Logo - phantom.png" alt="Z1 Studio Logo">
-        <h1 class="landing-title">Studio Design</hl>
-            <div class="landing-list">
-                <ul>
-                    <li><a href="#">Branding</a></li>
-                    <li><a href="#">Web Design</a></li>
-                    <li><a href="#">Web & Mobile App Development</a></li>
-                </ul>
-            </div>
-    <div class="landing-content">
-        <p>Coming soon</p>
-    </div>
-    </div>  
+
+    <header class="navbar">
+        <div class="logo"><img src="Public/Z1 Web Design Agency Logo - Ivory.png" alt="Z1 logo"></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <span></span><span></span><span></span>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1 class="fade-in">Z1 Studio</h1>
+        <p class="fade-in">Minimalist Design | Web & App Development | Branding</p>
+        <a href="#work" class="cta-button">See Our Work</a>
+    </section>
+
+    <section id="work" class="work-section">
+        <h2>Selected Work</h2>
+        <div class="work-grid">
+            <div class="work-item">Project 1</div>
+            <div class="work-item">Project 2</div>
+            <div class="work-item">Project 3</div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2025 Z1 Studio. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

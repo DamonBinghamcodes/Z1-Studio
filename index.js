@@ -1,8 +1,19 @@
-// Select the hamburger menu and navbar menu
-const hamburgerMenu = document.querySelector('.hamburger-menu');
-const navbarMenu = document.querySelector('.navbar-menu');
+// Select elements
+const hamburger = document.querySelector(".hamburger-menu");
+const navLinks = document.querySelector(".nav-links");
 
-// Add click event listener
-hamburgerMenu.addEventListener('click', () => {
-    navbarMenu.classList.toggle('hidden');
-});
+// Function to toggle menu
+function toggleMenu() {
+    navLinks.classList.toggle("open");
+    hamburger.classList.toggle("active");
+
+    // Toggle menu visibility
+    if (navLinks.classList.contains("open")) {
+        navLinks.style.display = "flex";
+    } else {
+        navLinks.style.display = "none";
+    }
+}
+
+// Event listener for menu toggle
+hamburger.addEventListener("click", toggleMenu);
