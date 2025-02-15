@@ -21,7 +21,7 @@ body {
     position: fixed;
     width: 100%;
     top: 0;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(23, 23, 23, 0.49);
 }
 
 .logo img {
@@ -141,27 +141,11 @@ body {
     font-size: 0.9rem;
 }
 
-//* TRANSITION */
+/* TRANSITION */
 a, .btn {
     transition: all 300ms ease;
 }
 
-/* DESKTOP-NAV*/
-nav, .nav-links {
-    display: flex;
-}
-
-nav {
-    justify-content: space-around;
-    align-items: center;
-    height: 17vh;
-}
-
-.nav-links {
-    gap: 2rem;
-    list-style: none;
-    font-size: 1.5rem;
-}
 
 /* HAMBURGER MENU */
 #hamburger-nav {
@@ -169,7 +153,6 @@ nav {
     top: 0;
     border-radius: 1rem;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Adds a shadow for depth */;
-    background-color: rgba(239, 239, 239, 0.945);
     z-index: 100; /* Ensure it stays on top of other elements */
     display: flex;
     justify-content: space-between;
@@ -195,7 +178,7 @@ nav {
 .hamburger-icon span {
     width: 100%;
     height: 2px;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     transition: all 0.3 ease-in-out;
 }
 
@@ -208,6 +191,7 @@ nav {
     max-height: 0;
     overflow: hidden;
     transition: all 0.3 ease-in-out;
+    display: none;
 }
 
 .menu-links a {
@@ -228,6 +212,7 @@ nav {
     max-height: 300px;
     border-radius: 1rem;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    display: block;
 }
 
 .hamburger-icon.open span:first-child {
@@ -255,24 +240,136 @@ nav {
 }
 
 /* Responsive Styles for Mobile */
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 1400px) {
+    #profile {
+      height: 83vh;
+      margin-bottom: 6rem;
+    }
+    .about-containers {
+      flex-wrap: wrap;
+    }
+    #contact,
+    #projects {
+      height: fit-content;
+    }
+    #hamburger-nav {
+      display: none;
+    }
+    #desktop-nav {
+      display: flex; /* or block depending on how you style it */
+    }
+  }
+  
+  @media screen and (min-width: 1201px) and (max-width: 1399px) {
+    #hamburger-nav {
+      display: none;
+    }
+    #desktop-nav {
+      display: flex; /* Ensure only the desktop nav is displayed */
+    }
+  }
+  
+  @media screen and (max-width: 1200px) {
+    #desktop-nav {
+      display: none;
+    }
+    #hamburger-nav {
+      display: flex;
+    }
+    #experience,
+    .experience-details-container {
+      margin-top: 2rem;
+    }
+    #profile,
+    .section-container {
+      display: block;
+    }
+    .arrow {
+      display: none;
+    }
+    section,
+    .section-container {
+      height: fit-content;
+    }
+    section {
+      margin: 0 5%;
+    }
+    .section__pic-container {
+      width: 275px;
+      height: 275px;
+      margin: 0 auto 2rem;
+    }
+    .about-containers {
+      margin-top: 0;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    #contact,
+    footer {
+      height: 40vh;
+    }
+    #profile {
+      height: 83vh;
+      margin-bottom: 0;
+    }
+    article {
+      font-size: 1rem;
+    }
+    footer nav {
+      height: fit-content;
+      margin-bottom: 2rem;
+    }
+    .about-containers,
+    .contact-info-upper-container,
+    .btn-container {
+      flex-wrap: wrap;
+    }
+    .contact-info-container {
+      margin: 0;
+    }
+    .contact-info-container p,
+    .nav-links li a {
+      font-size: 1rem;
+    }
+    .experience-sub-title {
+      font-size: 1.25rem;
+    }
+    .logo {
+      font-size: 1.5rem;
+    }
     .nav-links {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        background-color: rgba(0, 0, 0, 0.9);
-        width: 100%;
-        text-align: center;
-        padding: 20px;
+      flex-direction: column;
+      gap: 0.5rem;
+      text-align: center;
     }
-
-    .nav-links.open {
-        display: flex;
+    .section__pic-container {
+      width: auto;
+      height: 46vw;
+      justify-content: center;
     }
-
-    .hamburger-menu {
-        display: flex;
+    .section__text__p2 {
+      font-size: 1.25rem;
     }
-}
+    .title {
+      font-size: 2rem;
+    }
+    .text-container {
+      text-align: justify;
+    }
+  }
+  
+  @media (min-width: 375px) and (max-width: 430px) {
+    .btn-container .btn {
+      flex: wrap;
+      /* Adjust other styles if necessary to ensure consistency */
+    }
+  }
+  
+  .contact-info-upper-container {
+    display: flex; /* Align items horizontally */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center vertically */
+    gap: 1rem; /* Add space between items */
+    padding: 1rem; /* Optional padding for better spacing */
+  }
