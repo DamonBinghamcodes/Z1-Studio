@@ -17,6 +17,7 @@ body {
   text-align: center;
   min-height: 100vh;
   display: flex;
+  width: 100%;
   flex-direction: column;
 }
 
@@ -43,6 +44,7 @@ body {
 }
 
 .header img {
+  align-items: center;
   width: 100%;
   max-width: 200px;
   margin: 0 auto;
@@ -145,6 +147,7 @@ body {
   max-width: 720px;
   margin: 60px auto 40px;
   text-decoration: none;
+  align-items: center;
 }
 
 .main-header:hover {
@@ -189,14 +192,14 @@ body {
 }
 
 .product-title {
-  font-size: 3rem;
+  font-size: 1.5rem;
   font-weight: 100;
   margin-bottom: 10px;
   margin-top: 10px;
   text-align: center;
   font-family: 'Special Gothic Expanded One', sans-serif;
-  font-weight: 400;
   color: #111;
+  align-items: center;
 }
 
 .price {
@@ -209,7 +212,7 @@ body {
   background-color: #111;
   color: white;
   padding: 16px 36px;
-  font-size: 1rem;
+  font-size: 2rem;
   border-radius: 50px;
   cursor: pointer;
   transition: background 0.3s ease;
