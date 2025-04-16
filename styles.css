@@ -6,6 +6,11 @@
   font-family: 'Poppins', 'Inter', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 body {
   background-color: #efffc1;
   color: #111;
@@ -93,8 +98,8 @@ body {
 
 .nav a:hover {
   background-color: #ff5c00;
-  transform: translateY(-2px);
   transform: scale(1.2);
+  border-radius: 50px;
 }
 
 /* .nav a::after {
@@ -123,6 +128,31 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.main-header {
+  font-size: 1.3rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #111;
+  padding: 12px 20px;
+  text-align: center;
+  border-radius: 50px;
+  background-color: #ff5c00;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: 90%;
+  max-width: 720px;
+  margin: 60px auto 40px;
+  text-decoration: none;
+}
+
+.main-header:hover {
+  
+  transform: scale(1.05);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.12);
+}
+
 
 .projects-wrapper {
   display: flex;
@@ -162,6 +192,10 @@ body {
   font-size: 3rem;
   font-weight: 600;
   margin-bottom: 10px;
+  margin-top: 10px;
+  font-family: 'Special Gothic Expanded One', sans-serif;
+  font-weight: 400;
+  color: #111;
 }
 
 .price {
@@ -179,6 +213,7 @@ body {
   cursor: pointer;
   transition: background 0.3s ease;
   margin-bottom: 40px;
+  margin-top: 20px;
   text-decoration: none;
   font-weight: 600;
   text-transform: uppercase;
@@ -187,6 +222,7 @@ body {
 
 .cta-button:hover {
   background-color: #ff5c00;
+  transform: scale(1.05);
 }
 
 .tagline {
@@ -223,16 +259,49 @@ body {
     margin: 0;
     padding: 12px 20px;
     background: none;
-    border-radius: 0;
+    border-radius: 50px;
     box-shadow: none;
   }
 
   .nav a:hover {
     background-color: #ff5c00;
-    transition: background 0.3s ease;
     transform: scale(1.2);
-    transform: translateY(-2px);
-    box-shadow: 0 20px 40px rgba(239, 239, 239, 0.08);
     border-radius: 50px;
   }
+}
+
+
+@media screen and (min-width: 1200px) {
+  .main-header {
+    max-width: 800px;
+  }
+}
+
+@keyframes slideFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animated-text {
+  animation: slideFadeUp 1s ease forwards;
+  animation-fill-mode: both;
+  opacity: 0;
+}
+
+.product-title.animated-text {
+  animation-delay: 0.2s;
+}
+
+.price.animated-text {
+  animation-delay: 0.4s;
+}
+
+.tagline.animated-text {
+  animation-delay: 0.6s;
 }
