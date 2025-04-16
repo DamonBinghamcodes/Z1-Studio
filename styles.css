@@ -131,6 +131,17 @@ body {
   align-items: center;
 }
 
+.header-byline {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 2px;
+  margin-top: 20px;
+  text-align: center;
+  line-height: 1.5;
+  font-family: 'Caveat', cursive;
+}
+
 .main-header {
   font-size: 1.3rem;
   font-weight: 800;
@@ -192,12 +203,12 @@ body {
 }
 
 .product-title {
-  font-size: 1.5rem;
-  font-weight: 100;
+  font-size: 1.15rem;
+  font-weight: 600px;
   margin-bottom: 10px;
   margin-top: 10px;
   text-align: center;
-  font-family: 'Special Gothic Expanded One', sans-serif;
+  font-family:'Poppins', sans-serif;
   color: #111;
   align-items: center;
 }
