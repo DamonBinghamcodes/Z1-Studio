@@ -1,66 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Z1 Studio | Web Design Agency</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Z1 Studio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap" rel="stylesheet">
 </head>
 <body>
+  <header class="header">
+    <img src="Public/Z1 Web Design Agency Logo - Phantom.png" class="Logo" alt="Z1 Studio Logo" />
+    
+    <nav class="nav">
+      <a href="#">Home</a>
+      <a href="#">Work</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
 
-    <header class="navbar">
-        <div class="logo"><img src="Public/Z1 Web Design Agency Logo - Ivory.png" alt="Z1 logo"></div>
-        <nav id="desktop-nav">
-            <div>
-              <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-              </ul>
-            </div>
-          </nav>
-          <nav id="hamburger-nav">
-            <div class="hamburger-menu">
-              <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-              <div class="menu-links" onclick="toggleMenu()">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-              </div>
-            </div>
-          </nav>
-    </header>
-
-    <section class="hero">
-        <img class="hero-img" src="Public/Z1 Web Design Agency Logo - Phantom.png" alt="">
-        <h1 class="fade-in"><img class="hero-banner" src="Public/Z1 Web Design Agency Hero Logo Enter The Studio - Orange svg.svg" alt=""></h1>
-        <p class="fade-in">Web and Mobile App Development</p>
-        <a href="#work" class="cta-button">Turn your idea into reality</a>
-    </section>
-
-    <section id="work" class="work-section">
-        <h2>Selected Work</h2>
-        <div class="work-grid">
-            <div class="work-item">
-                <img class="work-item-1" src="Public/Rygtek Logo.png" alt="RYGTEK logo">
-                <P>A mobile application</P>
-            </div>
-            <div class="work-item">Project 2</div>
-            <div class="work-item">Project 3</div>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <p>© 2025 Z1 Studio. All rights reserved.</p>
-    </footer>
-
-    <script src="script.js"></script>
+  <main class="main">
+    <div class="projects-wrapper">
+    <div class="hero-card">
+      <img src="Public/Rygtek Logo.png" alt="Gallery Project" class="hero-image " />
+    </div>
+    <div class="hero-card">
+      <img src="Public/MKR_Logo_1_-_Copy_1100x.webp" alt="Gallery Project" class="hero-image" />
+    </div>
+  </div>
+    
+    <h2 class="product-title">Digitial Experience Design</h2>
+    <p class="price">Bring your idea to life</p>
+    <button class="cta-button">Let's GO</button>
+    <p class="tagline">Minimal design. Maximal impact.</p>
+  </main>
 </body>
 </html>
