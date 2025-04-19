@@ -247,6 +247,67 @@ body {
   padding-bottom: 40px;
 }
 
+/*Contact Us*/
+/* Contact form section */
+/* Container for the entire contact form section */
+.container {
+  max-width: 600px;              /* Limit content width */
+  margin: 60px auto;             /* Center on page */
+  padding: 20px;
+  background-color: #fff;        /* White background */
+  border-radius: 8px;            /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Page heading */
+.container h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Contact form layout */
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Input fields (text + email) */
+.input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+/* Textarea styling */
+.textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+/* Submit button */
+.btn {
+  padding: 12px;
+  background-color: #222;     /* Dark background */
+  color: #fff;                /* White text */
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #444;     /* Slightly lighter on hover */
+}
+
+
 /*media queries*/
 @media screen and (min-width: 900px) {
   .projects-wrapper {
@@ -319,4 +380,75 @@ body {
 
 .tagline.animated-text {
   animation-delay: 0.6s;
+}
+
+/* === Z1 Studio Aesthetic Enhancements === */
+
+/* Unified body background & font for more modern contrast */
+body {
+  background-color: #f9f9fb;
+  color: #1d1d1f;
+  font-family: -apple-system, BlinkMacSystemFont, 'Poppins', 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Clean, Apple-style buttons */
+.btn,
+.cta-button {
+  background-color: #000;
+  color: #fff;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn:hover,
+.cta-button:hover {
+  background-color: #1a1a1a;
+  transform: scale(1.05);
+}
+
+/* Update form input fields for modern aesthetic */
+.input,
+.textarea {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+  font-size: 1rem;
+  padding: 12px 14px;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.05);
+  transition: border-color 0.2s ease;
+}
+
+.input:focus,
+.textarea:focus {
+  outline: none;
+  border-color: #0a84ff;
+  box-shadow: 0 0 0 3px rgba(10, 132, 255, 0.15);
+}
+
+/* Contact section container refinement */
+.container {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 32px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+}
+
+/* Heading & paragraph spacing improvements */
+.container h1,
+.header-byline,
+.main-header,
+p {
+  letter-spacing: 0.5px;
+}
+
+.container h1 {
+  font-size: 2.25rem;
+  margin-bottom: 24px;
+  font-weight: 700;
+}
+
+/* Subtle transitions on all interactive elements */
+a, button, input, textarea {
+  transition: all 0.2s ease-in-out;
 }
