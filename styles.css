@@ -79,6 +79,7 @@
   .enter-btn:hover {
     background-color: #ff5c00;
     color: #fff;
+    transform: scale(1.5);
   }
   
   @keyframes fadeIn {
