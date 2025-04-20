@@ -1,0 +1,238 @@
+/* ========== WELCOME SCREEN STYLING ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  html, body {
+    height: 100%;
+    background-color: #0d0d0d; /* Deep black */
+    overflow: hidden;
+  }
+
+  body {
+    color: #fff;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+  }
+  
+  .welcome-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+  }
+
+  .Z1-logo {
+    width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+    /* Add a drop shadow effect to the logo */
+    filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.3));
+    transition: transform 0.3s ease;
+  }
+
+  .Z1-logo:hover {
+    transform: scale(1.05);
+  }
+  
+  .logo {
+    width: 400px;
+    height: auto;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.3));
+    transition: transform 0.3s ease;
+  }
+
+  .logo:hover {
+    transform: scale(1.05);
+  }
+  
+  .tagline {
+    margin-top: 10px;
+    font-weight: 300;
+    color: #bbb;
+    font-size: 1rem;
+  }
+  
+  .enter-btn {
+    margin-top: 30px;
+    background-color: transparent;
+    border: 2px solid #ff5c00;
+    color: #ff5c00;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .enter-btn:hover {
+    background-color: #ff5c00;
+    color: #fff;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+
+  /* Header */
+.header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #0d0d0d;
+    backdrop-filter: blur(10px);
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+  }
+  
+  .header img {
+    height: 40px;
+    cursor: pointer;
+  }
+  
+  .navbar {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: white;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  /* Toggle Show Class */
+.navbar.show {
+    display: flex !important;
+  }
+  
+  
+  .navbar a {
+    text-decoration: none;
+    color: #111;
+    padding: 1rem 2rem;
+    font-weight: 500;
+    transition: background 0.3s;
+  }
+  
+  .navbar a:hover {
+    background-color: #ff5c00;
+    color: white;
+  }
+  
+  .hamburger {
+    font-size: 1.5rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+  }
+  
+  /* Hero Section */
+  .hero {
+    padding: 4rem 2rem;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+  }
+  
+  .hero p {
+    font-size: 1.125rem;
+    color: #666;
+    margin: 1rem 0 2rem;
+  }
+  
+  .btn-orange {
+    background-color: #ff5c00;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .btn-orange:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Projects */
+  .projects {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem 2rem;
+    align-items: center;
+  }
+  
+  .project-tile {
+    background-color: #212121;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.07);
+    transition: transform 0.3s, box-shadow 0.3s;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .project-tile:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+  }
+  
+  .project-tile img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 1rem;
+  }
+  
+  /* Media Queries */
+  @media screen and (min-width: 768px) {
+    .navbar {
+      display: flex !important;
+      flex-direction: row;
+      position: static;
+      box-shadow: none;
+      background: transparent;
+    }
+  
+    .navbar a {
+      padding: 0 1rem;
+      color: #111;
+    }
+  
+    .hamburger {
+      display: none;
+    }
+  
+    .projects {
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+  
+  
