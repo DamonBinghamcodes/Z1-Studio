@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Z1 Studio | Home</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header/Nav -->
+  <header class="header">
+    <a href="index.html" class="logo">Z1<sup>®</sup></a>
+    <button class="hamburger" id="hamburger">&#9776;</button>
+    <nav class="navbar" id="navbar">
+      <a href="#projects">Projects</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1 class="hero-title">Z1 Studio</h1>
+    <p class="hero-subtext">Helping small businesses attract, convert and retain clients.</p>
+    <a href="#projects" class="cta">Our Latest Projects</a>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="projects">
+    <div class="project-tile">
+      <img src="Public/Rygtek Logo.png" alt="Rygtek Logo">
+    </div>
+    <div class="project-tile">
+      <img src="Public/MKR_Logo_1_-_Copy_1100x.webp" alt="MK&R Logo">
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Z1 Studio. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navbar = document.getElementById('navbar');
+
+    hamburger.addEventListener('click', () => {
+      navbar.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>

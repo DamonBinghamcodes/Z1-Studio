@@ -7,11 +7,12 @@
   }
   
   html, body {
-    height: 100%;
+    min-height: 100vh;
     background-color: #0d0d0d; /* Deep black */
     color: #fff;
     overflow: hidden;
     scroll-behavior: smooth;
+    overflow: hidden;
   }
 
   body {
