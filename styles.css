@@ -10,9 +10,8 @@
     min-height: 100vh;
     background-color: #0d0d0d; /* Deep black */
     color: #fff;
-    overflow: hidden;
     scroll-behavior: smooth;
-    overflow: hidden;
+    overflow-x: hidden; /* allow vertical scroll */
   }
 
   body {
