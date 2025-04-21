@@ -66,3 +66,17 @@ document.addEventListener("DOMContentLoaded", () => {
     updateSlider();
   });
   
+  document.addEventListener('DOMContentLoaded', () => {
+    const container = document.querySelector('.slider-container');
+    const dots = document.querySelectorAll('.dot');
+  
+    container.addEventListener('scroll', () => {
+      const scrollLeft = container.scrollLeft;
+      const width = container.offsetWidth;
+      const index = Math.round(scrollLeft / width);
+      
+      dots.forEach(dot => dot.classList.remove('active'));
+      if (dots[index]) dots[index].classList.add('active');
+    });
+  });
+  
