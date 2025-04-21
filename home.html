@@ -4,25 +4,29 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#0d0d0d">
-<link rel="icon" type="image/png" href="Public/Z1 Web Design Agency Logo - Ivory.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="Public/Z1 Web Design Agency Logo - Ivory.png" sizes="16x16" />
   <title>Z1 Studio | Home</title>
   <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
 </head>
+
+ 
 <body>
   <!-- Header/Nav -->
-  <header class="header">
-    <a href="index.html" class="logo">Z1<sup>®</sup></a>
-    <button class="hamburger" id="hamburger">&#9776;</button>
-    <nav class="navbar" id="navbar">
-      <a href="#projects">Projects</a>
-      <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
+ <header class="header">
+  <a href="index.html" class="logo">Z1<sup>®</sup></a>
+  <div id="hamburger" class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <nav class="navbar" id="navbar">
+    <a href="#projects">Projects</a>
+    <a href="#services">Services</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
   <!-- Hero -->
   <section class="hero">
     <h1 class="hero-title">Z1 Studio</h1>
@@ -36,20 +40,17 @@
   <section id="projects" class="projects fade-in-up">
     <div class="project-tile">
       <img src="Public/Rygtek Logo.png" alt="Rygtek Logo">
-      <a href="https://www.rygtek.com" target="_blank" class="tile-button">View Project
-        </a>
+      <a href="https://www.rygtek.com" target="_blank" class="tile-button">View Project</a>
     </div>
     <div class="project-tile">
       <img src="Public/MKR_Logo_1_-_Copy_1100x.webp" alt="MK&R Logo">
-      <a href="https://www.mkandr.com.au" target="_blank" class="tile-button">View Project
-        </a>
+      <a href="https://www.mkandr.com.au" target="_blank" class="tile-button">View Project</a>
     </div>
   </section>
 
   <!-- Services Section -->
   <section id="services" class="services">
     <h2 class="section-title">What We Do</h2>
-  
     <div class="slider-container">
       <div class="service-tile">
         <i class="fas fa-paint-brush service-icon"></i>
@@ -67,28 +68,29 @@
         <p>We help you define your message and create visual consistency across all touchpoints.</p>
       </div>
     </div>
-  
+
     <div class="slider-dots">
       <span class="dot active"></span>
       <span class="dot"></span>
       <span class="dot"></span>
     </div>
   </section>
-  
+
+  <section id="contact" class="contact">
+    <h2>Work With Us</h2>
+    <p>We’d love to hear about your next project.</p>
+    <form class="contact-form">
+      <input type="text" placeholder="Name" required />
+      <input type="email" placeholder="Email" required />
+      <textarea placeholder="Message" required></textarea>
+      <button type="submit" class="cta">Send Message</button>
+    </form>
+  </section>
+
   <!-- Footer -->
   <footer class="footer">
     <p>© 2025 Z1 Studio. All rights reserved.</p>
   </footer>
-
-  <!-- JavaScript -->
-  <script>
-    const hamburger = document.getElementById('hamburger');
-    const navbar = document.getElementById('navbar');
-
-    hamburger.addEventListener('click', () => {
-      navbar.classList.toggle('show');
-    });
-  </script>
   <script src="script.js"></script>
 </body>
 </html>
