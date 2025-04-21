@@ -3,9 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0d0d0d">
+<link rel="icon" type="image/png" href="Public/Z1 Web Design Agency Logo - Ivory.png" sizes="16x16" />
   <title>Z1 Studio | Home</title>
   <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 </head>
 <body>
   <!-- Header/Nav -->
@@ -29,7 +33,7 @@
   </section>
 
   <!-- Projects -->
-  <section id="projects" class="projects">
+  <section id="projects" class="projects fade-in-up">
     <div class="project-tile">
       <img src="Public/Rygtek Logo.png" alt="Rygtek Logo">
       <a href="https://www.rygtek.com" target="_blank" class="tile-button">View Project
@@ -41,6 +45,38 @@
         </a>
     </div>
   </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <h2 class="section-title">What We Do</h2>
+    <div class="slider-wrapper">
+      <div class="slider-track">
+        <div class="service-tile">
+          <i class="fas fa-paint-brush service-icon"></i>
+          <h3>Web Design</h3>
+          <p>Minimal, bold UI design to give your brand a distinct online presence.</p>
+        </div>
+        <div class="service-tile">
+          <i class="fas fa-laptop-code service-icon"></i>
+          <h3>Development</h3>
+          <p>Responsive, fast and functional builds using modern technologies.</p>
+        </div>
+        <div class="service-tile">
+          <i class="fas fa-lightbulb service-icon"></i>
+          <h3>Strategy</h3>
+          <p>We help you define your message and create visual consistency across all touchpoints.</p>
+        </div>
+      </div>
+  
+      <div class="slider-dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+  </section>  
+   
+
 
   <!-- Footer -->
   <footer class="footer">
@@ -56,5 +92,6 @@
       navbar.classList.toggle('show');
     });
   </script>
+  <script src="script.js"></script>
 </body>
 </html>
