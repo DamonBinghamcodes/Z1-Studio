@@ -520,6 +520,153 @@
   color: #888;
 }
 
+/* Services Section */
+.services-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 3rem 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.info-block {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.info-block.reverse {
+  flex-direction: row-reverse;
+}
+
+.info-icon {
+  font-size: 3rem;
+  color: #ff5c00;
+}
+
+.pulse {
+  animation: pulseGlow 1.8s infinite ease-in-out;
+}
+
+@keyframes pulseGlow {
+  0% { transform: scale(1); opacity: 0.9; }
+  50% { transform: scale(1.1); opacity: 1; }
+  100% { transform: scale(1); opacity: 0.9; }
+}
+
+.info-text h2 {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.info-text p {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.cta-section {
+  text-align: center;
+  padding: 5rem 2rem;
+  background-color: #111;
+  border-top: 1px solid #333;
+}
+
+.cta-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+
+.cta-button {
+  background-color: #ff5c00;
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
+  background-color: #ff7f00;
+}
+
+/*Projects Page*/
+.projects-page {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 4rem 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.project-feature {
+  display: flex;
+  flex-direction: column;
+  background-color: #1a1a1a;
+  border-radius: 24px;
+  padding: 2rem;
+  gap: 2rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.project-feature img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+.project-info h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.project-info p {
+  color: #ccc;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.project-info .tile-button {
+  background-color: #2c2c2e;
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 10px 24px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  display: inline-block;
+}
+
+.project-info .tile-button:hover {
+  background-color: #ff5c00;
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .project-feature {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .project-feature img {
+    width: 50%;
+  }
+
+  .project-info {
+    width: 50%;
+  }
+}
+
+
 
 /* Desktop Layout */
 @media screen and (min-width: 768px) {

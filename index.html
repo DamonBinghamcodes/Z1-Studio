@@ -5,16 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#0d0d0d">
 <link rel="icon" type="image/png" href="Public/Z1 Web Design Agency Logo - Ivory.png" sizes="16x16" />
-
   <title>Z1 Studio | Welcome</title>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
 </head>
+
 <body>
   <div class="welcome-container">
-    <img src="Public/Z1 Web Design Agency Logo - Ivory.png" alt="Z1 studio logo" class="Z1-logo" />
-    <img src="Public/Z1 Web Design Agency Hero Logo Enter The Studio - Orange svg.svg" alt="Z1 Studio Logo" class="logo" />
-    <div class="tagline">Where creative prestige begins.</div>
-    <button class="enter-btn" onclick="enterSite()">Let's Create</button>
+    <img src="Public/Z1 Web Design Agency Logo - Ivory.png" alt="Z1 studio logo" class="Z1-logo" data-aos="zoom-in"/>
+    <img src="Public/Z1 Web Design Agency Hero Logo Enter The Studio - Orange svg.svg" alt="Z1 Studio Logo" class="logo" <div class="social-links" data-aos="fade-left" data-aos-delay="700"/>
+    <div class="tagline" data-aos="fade-up" data-aos-delay="300">Where creative prestige begins.</div>
+    <button class="enter-btn" data-aos="fade-right" data-aos-delay="500" onclick="enterSite()">Let's Create</button>
+    <div class="social-links" data-aos="zoom-in" data-aos-delay="700">
+      <!-- icons/links -->
   </div>
 
   <script>
@@ -22,5 +25,14 @@
       window.location.href = "home.html";
     }
   </script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+      easing: 'ease-out-cubic'
+    });
+  </script>
+  
 </body>
 </html>
