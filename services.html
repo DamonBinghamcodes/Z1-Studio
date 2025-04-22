@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
 </head>
 <body>
 
@@ -29,14 +31,14 @@
   </header>
 
   <!-- Hero -->
-  <section class="hero">
-    <h1 class="hero-title">How We Work</h1>
-    <p class="hero-subtext">We’re not for everyone. We’re for those who care deeply about the details.</p>
+  <section class="hero" data-aos="fade-up">
+    <h1 class="hero-title" data-aos="fade-down">How We Work</h1>
+    <p class="hero-subtext" data-aos="fade-up" data-aos-delay="200">We’re not for everyone. We’re for those who care deeply about the details.</p>
   </section>
 
   <!-- Staggered Info Blocks -->
   <section class="services-info container">
-    <div class="info-block">
+    <div class="info-block" data-aos="fade-right">
       <i class="fas fa-bullseye info-icon pulse"></i>
       <div class="info-text">
         <h2>What We Do</h2>
@@ -44,7 +46,7 @@
       </div>
     </div>
 
-    <div class="info-block reverse">
+    <div class="info-block reverse" data-aos="fade-left" data-aos-delay="100">
       <div class="info-text">
         <h2>How We Help</h2>
         <p>We help small businesses position themselves like big brands — with tailored design, thoughtful UX, and lightning-fast sites that convert.</p>
@@ -52,7 +54,7 @@
       <i class="fas fa-rocket info-icon pulse"></i>
     </div>
 
-    <div class="info-block">
+    <div class="info-block" data-aos="fade-up" data-aos-delay="200">
       <i class="fas fa-handshake info-icon pulse"></i>
       <div class="info-text">
         <h2>Are We a Good Fit?</h2>
@@ -62,7 +64,7 @@
   </section>
 
   <!-- Call to Action -->
-  <section class="cta-section">
+  <section class="cta-section" data-aos="zoom-in">
     <h2>Ready to Build Something Bold?</h2>
     <a href="contact.html" class="cta-button">Let’s Talk</a>
   </section>
@@ -73,5 +75,14 @@
   </footer>
 
   <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true,
+    easing: 'ease-out-cubic'
+  });
+</script>
+
 </body>
 </html>

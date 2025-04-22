@@ -6,6 +6,8 @@
   <title>Contact | Z1 Studio</title>
   <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
 </head>
 
  
@@ -27,12 +29,12 @@
         </nav>
       </header>
       
-  <section class="contact-hero container">
-    <h1 class="contact-title">Want to work with us?</h1>
-    <p class="contact-subtext">We're a good fit if you're looking for bold ideas, clean execution, and serious results.</p>
+  <section class="contact-hero container" data-aos="fade-up">
+    <h1 class="contact-title" data-aos="fade-down">Want to work with us?</h1>
+    <p class="contact-subtext" data-aos="fade-up" data-aos-delay="200">We're a good fit if you're looking for bold ideas, clean execution, and serious results.</p>
   </section>
 
-  <section class="contact-form-wrapper container">
+  <section class="contact-form-wrapper container" data-aos="zoom-in">
     <form class="contact-form">
       <label>Name</label>
       <input type="text" name="name" placeholder="e.g. Alex Jones" required />
@@ -46,7 +48,7 @@
       <button type="submit container" class="cta">Send Request</button>
     </form>
 
-    <div class="contact-note container">
+    <div class="contact-note container" data-aos="fade-up" data-aos-delay="200">
       <p>We only take on a few projects per quarter. If we’re a good fit, you’ll hear from us within 48 hours.</p>
     </div>
   </section>
@@ -55,6 +57,14 @@
     <p>© 2025 Z1 Studio. Let’s build something iconic.</p>
   </footer>
   <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true,
+    easing: 'ease-out-cubic'
+  });
+</script>
 
 </body>
 </html>
