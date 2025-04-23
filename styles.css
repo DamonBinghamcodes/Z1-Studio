@@ -67,7 +67,7 @@
   .tagline {
     margin-top: 10px;
     font-weight: 300;
-    color: #bbb;
+    color: #ff5c00;
     font-size: 1rem;
   }
   
@@ -133,7 +133,7 @@
 .hamburger span {
   width: 25px;
   height: 3px;
-  background: #fff;
+  background: #ff5c00;
   border-radius: 2px;
   transition: 0.3s ease;
 }
@@ -174,9 +174,9 @@
 
 .navbar a {
   text-decoration: none;
-  color: #fff;
+  color: #ff5c00;
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 800;
   transition: color 0.3s ease;
 }
 
@@ -193,6 +193,7 @@
 .hero-title {
   font-size: 2.75rem;
   font-weight: 800;
+  color: #212121;
 }
 
 .hero-subtext {
@@ -215,6 +216,10 @@
 
 .cta:hover {
   transform: scale(1.05);
+}
+
+.services {
+  color: #212121;
 }
 
 /* Projects Section */
@@ -250,6 +255,7 @@
   max-width: 100%;
   object-fit: contain;
   margin-bottom: 1rem;
+  border-radius: 0;
 }
 
 
