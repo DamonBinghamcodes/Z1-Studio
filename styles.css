@@ -29,17 +29,38 @@ body {
 }
 
 
-.welcome-container {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  opacity: 0;
-  animation: fadeIn 2s ease forwards;
-  text-align: center;
+ .welcome-container {
+   height: 100vh;
+   width: 100vw;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding-top: 0; /* default desktop */
+   color: white;
+   opacity: 0;
+   animation: fadeIn 1.5s ease-in-out forwards;
+   text-align: center;
+ }
+
+ /* Mobile Adjustment */
+ @media (max-width: 768px) {
+   .welcome-container {
+     justify-content: flex-start;
+     padding-top: 15vh;
+   }
+   .enter-btn {
+     margin-top: 40px; /* slightly larger space for mobile */
+   }
+ }
+
+@media (max-width: 430px) {
+  .welcome-container {
+    padding-top: 12vh;
+  }
+  .enter-btn {
+    margin-top: 36px;
+  }
 }
 
 .Z1-logo {
@@ -763,4 +784,9 @@ color: #aaa;
 .nav.show {
   display: flex;
 }
+}
+
+html, body {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch; /* iOS smoother touch scroll */
 }
