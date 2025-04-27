@@ -642,13 +642,16 @@ margin: 0 auto;
 }
 
 .project-feature {
-display: flex;
-flex-direction: column;
-background-color: #1a1a1a;
-border-radius: 24px;
-padding: 2rem;
-gap: 2rem;
-box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center everything horizontally */
+  justify-content: center; /* Center vertically if needed */
+  text-align: center;
+  background-color: #1a1a1a;
+  border-radius: 24px;
+  padding: 2rem;
+  gap: 2rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
 .project-feature img {
@@ -656,6 +659,14 @@ width: 100%;
 border-radius: 12px;
 object-fit: cover;
 box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
 }
 
 .project-info h2 {
@@ -789,4 +800,51 @@ color: #aaa;
 html, body {
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch; /* iOS smoother touch scroll */
+}
+
+
+/* Tech Stack Icons */
+.tech-stack {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+  padding-bottom: 3rem;
+}
+
+.tech-stack i {
+  font-size: 24px;
+  color: #bbb;
+  transition: color 0.3s ease, transform 0.3s ease;
+  position: relative;
+  cursor: pointer;
+}
+
+.tech-stack i:hover {
+  color: #ff5c00; /* Burnt orange on hover */
+  transform: scale(1.2);
+}
+
+/* Tooltip on hover */
+.tech-stack i::after {
+  content: attr(title);
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #111;
+  color: #fff;
+  padding: 4px 8px;
+  font-size: 0.7rem;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.tech-stack i:hover::after {
+  opacity: 1;
 }
