@@ -1,38 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#0d0d0d">
-<link rel="icon" type="image/png" href="Public/Z1 Web Design Agency Logo - Ivory.png" sizes="16x16" />
-  <title>Z1 Studio | Welcome</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z1 Studio | Premium Web & Mobile Development</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
+<body class="welcome-body">
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-logo">Z1<sup>®</sup></div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+        </div>
+    </div>
 
-<body>
-  <div class="welcome-container">
-    <img src="Public/Z1 Web Design Agency Logo - Ivory.png" alt="Z1 studio logo" class="Z1-logo" data-aos="zoom-in"/>
-    <img src="Public/Z1 Web Design Agency Hero Logo Enter The Studio - Orange svg.svg" alt="Z1 Studio Logo" class="logo"> <div class="social-links" data-aos="fade-left" data-aos-delay="700">
-    <div class="tagline" data-aos="fade-up" data-aos-delay="300">Where creative prestige begins.</div>
-    <button class="enter-btn" data-aos="fade-right" data-aos-delay="500" onclick="enterSite()">Let's Create</button>
-    <div class="social-links" data-aos="zoom-in" data-aos-delay="700">
-      <!-- icons/links -->
-  </div>
+    <!-- Welcome Container -->
+    <div class="welcome-container" id="welcome">
+        <!-- Animated Background -->
+        <div class="bg-animation">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+                <div class="shape shape-5"></div>
+            </div>
+            <div class="grid-overlay"></div>
+        </div>
 
-  <script>
-    function enterSite() {
-      window.location.href = "home.html";
-    }
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 1000,
-      once: true,
-      easing: 'ease-out-cubic'
-    });
-  </script>
-  
+        <!-- Main Content -->
+        <div class="welcome-content">
+            <!-- Logo Animation -->
+            <div class="logo-container" data-aos="zoom-in" data-aos-duration="1000">
+                <div class="main-logo">
+                    <span class="logo-text">Z1</span>
+                    <sup class="logo-sup">®</sup>
+                </div>
+                <div class="logo-underline"></div>
+            </div>
+
+            <!-- Tagline -->
+            <div class="tagline-container" data-aos="fade-up" data-aos-delay="500">
+                <h1 class="tagline">Where Digital Excellence Begins</h1>
+                <p class="subtitle">Premium web development & mobile apps for ambitious brands</p>
+            </div>
+
+            <!-- CTA Button -->
+            <div class="cta-container" data-aos="fade-up" data-aos-delay="800">
+                <button class="enter-studio-btn" onclick="enterStudio()">
+                    <span class="btn-text">Enter The Studio</span>
+                    <div class="btn-bg"></div>
+                    <div class="btn-particles">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+            </div>
+
+            <!-- Social Links -->
+            <div class="social-links" data-aos="fade-up" data-aos-delay="1000">
+                <a href="#" class="social-link">
+                    <i class="fab fa-dribbble"></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fab fa-behance"></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator" data-aos="fade-in" data-aos-delay="1200">
+            <div class="scroll-line"></div>
+            <span class="scroll-text">Scroll to explore</span>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="welcome.js"></script>
 </body>
 </html>
