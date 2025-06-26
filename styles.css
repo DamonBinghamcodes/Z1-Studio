@@ -478,7 +478,7 @@ body {
     align-items: center;
 }
 
-#nav-menu {
+#nav-menu.active {
     background: rgba(0, 0, 0, 0.936);
     backdrop-filter: blur(20px);
     transition: all 0.3s ease;
