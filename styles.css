@@ -860,7 +860,18 @@ section {
     background: rgba(255, 255, 255, 0.1);
     clip-path: polygon(5px 0%, 100% 0%, calc(100% - 5px) 100%, 0% 100%);
     font-size: 0.8rem;
-    color: #ffffff;
+    color: #000000;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.tag-test {
+    padding: 0.4rem 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    clip-path: polygon(5px 0%, 100% 0%, calc(100% - 5px) 100%, 0% 100%);
+    font-size: 0.8rem;
+    color: #bfbfbf;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -894,6 +905,16 @@ section {
 
 .projects-cta {
     text-align: center;
+}
+
+.project-logo {
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+    position: absolute;
+    bottom: 30px;
+    left: 10px;
+    z-index: 1000;
 }
 
 /* ===========================================
